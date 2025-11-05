@@ -10,6 +10,11 @@ export default function Home() {
   const isMobile = useMediaQuery("(max-width:900px)");
   const sidebarWidth = 240;
 
+
+
+
+  
+
   const stats = [
     { title: "Total Wallets", value: "12" },
     { title: "Active Users", value: "8" },
