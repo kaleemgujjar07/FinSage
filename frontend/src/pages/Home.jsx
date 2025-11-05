@@ -10,11 +10,6 @@ export default function Home() {
   const isMobile = useMediaQuery("(max-width:900px)");
   const sidebarWidth = 240;
 
-
-
-
-  
-
   const stats = [
     { title: "Total Wallets", value: "12" },
     { title: "Active Users", value: "8" },
@@ -66,7 +61,12 @@ export default function Home() {
                 <motion.div
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.1 * index, duration: 0.5, type: "spring", stiffness: 100 }}
+                  transition={{
+                    delay: 0.1 * index,
+                    duration: 0.5,
+                    type: "spring",
+                    stiffness: 100,
+                  }}
                 >
                   <DashboardCard {...item} />
                 </motion.div>
